@@ -1,0 +1,87 @@
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+:root {
+  --dark: black;
+  --white: #ffff;
+  --range: black;
+}
+
+/*MEDIA QUARIES AYARLARI START*/
+
+@media screen and (max-width: 390px) {
+  #music-image {
+    width: 100%;
+    /* margin-top: 40%;
+    margin-left: 7px; */
+  }
+
+  #music-details .title {
+    font-size: x-large;
+    text-align: center;
+  }
+
+  #music-details .singer {
+    font-size: larger;
+    text-align: center;
+  }
+}
+/*MEDIA QUERIES AYARLARI END*/
+
+#controls button {
+  color: var(--white);
+  background-color: var(--dark);
+  border-color: var(--dark);
+}
+
+.container {
+  width: 400px;
+}
+/*
+#controls i {
+  font-size: 30px;
+  color: black;
+  margin-right: 20px;
+  padding: -3px;
+}
+*/
+#progress-bar {
+  width: 100%;
+}
+
+#progress .times,
+#controls,
+.card-footer,
+.volume-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#music-image {
+  width: 100%;
+}
+
+#controls {
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.volume-container i {
+  margin-right: 10px;
+}
+
+.music-list-text {
+  font-size: 13px;
+}
+
+li.playing {
+  background-color: black;
+  color: #ffff;
+}
